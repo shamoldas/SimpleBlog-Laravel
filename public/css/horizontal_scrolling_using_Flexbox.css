@@ -1,0 +1,27 @@
+.image_container{    display: flex;    overflow-x: auto;}
+.image_container img {    margin-right: 15px;}
+.image_container::-webkit-scrollbar {    display: none;}
+.image_container {   display: flex;   align-items: center;   height: 100vh;}
+
+
+.box-tasvir {
+    overflow: hidden;
+    height: 320px;
+    width: 320px;
+    position: relative;
+    margin: 0 auto;
+}
+@keyframes masihscroll {
+    0% {transform: translateY(0%);}
+    50% {transform: translateY(-80%);}
+    100% {transform: translateY(-0%);}
+}
+.box-tasvir img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    transition: all 3s;
+    animation-duration: 25s;
+    animation-name: masihscroll;
+    animation-iteration-count: 1000;
+}
